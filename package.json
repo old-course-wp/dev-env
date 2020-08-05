@@ -4,8 +4,9 @@
   "description": "A typical JavaScript dev environment",
   "main": "index.js",
   "scripts": {
+    "lint:css": "stylelint **/*.css",
     "lint:js": "eslint .",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js && npm run lint:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,8 @@
   "devDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.22.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
